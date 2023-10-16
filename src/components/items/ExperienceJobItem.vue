@@ -1,0 +1,47 @@
+<template>
+    <div role="button"
+        class="bg-gradient-to-br w-full from-gray-700 to-gray-900 border border-gray-700 rounded-3xl text-white flex flex-col gap-2 p-2">
+        <div class="flex items-center justify-between w-full">
+            <span class="text-white font-semibold m-1">
+                {{ props.company || 'COMPANY NAME' }}
+            </span>
+
+            <span class="text-white font-semibold m-1">
+                {{ props.location || 'LOCATION' }}
+            </span>
+        </div>
+        <div class="flex items-center justify-between w-full">
+            <span class="text-xs text-gray-400 font-semibold m-1">
+                {{ props.role || 'Role' }}
+            </span>
+
+            <span class="text-xs  text-gray-400 font-semibold m-1">
+                {{ props.duration_date || 'duartio' }}
+            </span>
+        </div>
+        <!-- <div class="flex-col items-center justify-between w-full"> -->
+        <span class="text-xs text-gray-400 font-semibold m-1">
+            {{ props.project || 'Project' }}
+        </span>
+
+        <span class="text-xs  text-gray-400 font-semibold m-1">
+
+            <span v-if="props.technologies"
+                class="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 my-1 rounded-full dark:bg-gray-700 dark:text-gray-300"
+                v-for="(technology, index) in props.technologies" :key="index">
+                {{ technology }}
+            </span>
+        </span>
+        <!-- </div> -->
+    </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const props = defineProps(["company", "role", "location", "duration_date", "technologies", "project"]);
+
+
+</script>
+
+<style scoped></style>
