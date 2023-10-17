@@ -68,3 +68,25 @@ const route = useRoute()
     </div>
   </div>
 </template>
+
+<style>
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #d8d7d7ad; 
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(#464646f6,#838383f6,#464646f6); 
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2b; 
+}
+</style>
