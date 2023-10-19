@@ -15,13 +15,13 @@ const route = useRoute()
       </div>
       <!-- Nav -->
       <div id="nav-menu" class="hidden sm:flex gap-10">
-        <div :class="{'text-white' : route.path === '/'}">
+        <div :class="{ 'text-white': route.path === '/' }">
           <RouterLink to="/">Home</RouterLink>
         </div>
-        <div :class="{'text-white' : route.path === '/about'}">
+        <div :class="{ 'text-white': route.path === '/about' }">
           <RouterLink to="/about">About</RouterLink>
         </div>
-        <div :class="{'text-white' : route.path === '/works'}" >
+        <div :class="{ 'text-white': route.path === '/works' }">
           <RouterLink to="/works">Works</RouterLink>
         </div>
         <!-- <div>
@@ -30,10 +30,8 @@ const route = useRoute()
       </div>
       <!-- CTA Button -->
       <div id="cta-btn">
-        <a
-          href="mailto:ahmedoun199@gmail.com"
-          class="bg-gray-700 text-white px-6 py-3 rounded-xl hover:bg-white hover:text-gray-700 transition-all"
-        >
+        <a href="mailto:ahmedoun199@gmail.com"
+          class="bg-gray-700 text-white px-6 py-3 rounded-xl hover:bg-white hover:text-gray-700 transition-all">
           Let's Talk
         </a>
       </div>
@@ -50,13 +48,13 @@ const route = useRoute()
       </div>
       <!-- Nav -->
       <div id="nav-menu" class="flex gap-10">
-        <div :class="{'text-white' : route.path === '/'}">
+        <div :class="{ 'text-white': route.path === '/' }">
           <RouterLink to="/">Home</RouterLink>
         </div>
-        <div :class="{'text-white' : route.path === '/about'}" >
+        <div :class="{ 'text-white': route.path === '/about' }">
           <RouterLink to="/about">About</RouterLink>
         </div>
-        <div :class="{'text-white' : route.path === '/works'}" >
+        <div :class="{ 'text-white': route.path === '/works' }">
           <RouterLink to="/works">Works</RouterLink>
         </div>
       </div>
@@ -70,23 +68,52 @@ const route = useRoute()
 </template>
 
 <style>
+
+.text-pop-up-top {
+  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.modal_wrapper {
+  border-radius: 1rem;
+  font-family: Inter;
+  overflow: auto;
+}
+
+.modal_wrapper .modal__close {
+  align-self: flex-end;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.modal_wrapper .modal__close:hover {
+  background-color: #5f5f5f;
+  color: white;
+}
+
+.modal_wrapper .modal__title {
+  font-weight: bold;
+}
+
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 8.75px;
 }
 
 /* Track */
 *::-webkit-scrollbar-track {
-  background: #d8d7d7ad; 
+  background: #e0e0e0ad;
+  border-radius: 10px;
 }
- 
+
 /* Handle */
 *::-webkit-scrollbar-thumb {
-  background: linear-gradient(#464646f6,#838383f6,#464646f6); 
-  border-radius: 12px;
+  background: linear-gradient(#464646f6, #585858f6, #353535f6);
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 *::-webkit-scrollbar-thumb:hover {
-  background: #2b2b2b; 
+  background: #2b2b2b;
 }
 </style>

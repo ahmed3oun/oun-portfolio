@@ -205,7 +205,7 @@ const navigateTo = (link: string) => {
           <!-- <div class="text-xs text-zinc-500 mt-2"> -->
             <div class="flex flex-wrap">
               <span v-for="(_slogan, index) in user.slogan" :key="index"
-                class="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 my-1 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                class="bg-gray-600 text-gray-100 text-xs font-medium mr-2 px-2.5 py-0.5 my-1 rounded-full dark:bg-gray-700 dark:text-gray-300">
                 {{ _slogan }}
               </span>
             </div>

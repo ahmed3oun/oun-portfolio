@@ -11,14 +11,16 @@ const emit = defineEmits<{
 </script>
 
 <template>
-    <VueFinalModal
-        class="flex align-center items-center flex-col max-w-xl mx-4 p-4 bg-gray-600 border dark:border-gray-700 rounded-lg space-y-2">
+    <VueFinalModal class="flex justify-center items-center"
+        content-class="flex flex-col max-w-xl mx-4 p-4 bg-white dark:bg-gray-900 border dark:border-gray-700 rounded-xl space-y-2">
         <h1 class="text-xl">
-            {{ content }}
+            <slot />
+            <!-- {{ content }} -->
         </h1>
-        <slot />
         <button class="mt-1 ml-auto px-2 border rounded-lg" @click="emit('exit')">
             Exit
         </button>
     </VueFinalModal>
 </template>
+
+<style></style>

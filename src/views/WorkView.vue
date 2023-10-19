@@ -2,18 +2,17 @@
     <main>
         <div class="grid grid-cols-1 sm:grid-cols-1 my-6 grid-wrapper">
             <GPanel class="w-full" span="4" title="Education">
-                <ExperienceJobItem duration_date="Sep. 2016 – Aug. 2019" role="Bachelor’s degree in Computer Science"
+                <ExperienceEducItem duration_date="Sep. 2016 – Aug. 2019" role="Bachelor’s degree in Computer Science"
                     company="Higher Institute of Information and Communication Technologies"
                     location="Ben arous, Borj cedria" />
-                <ExperienceJobItem duration_date="Sep. 2019 – Oct. 2022" role="Web & mobile developement engineering"
+                <ExperienceEducItem duration_date="Sep. 2019 – Oct. 2022" role="Web & mobile developement engineering"
                     company="TEK-UP private higher school of technologies & engineering" location="Tunis, Ariana" />
-
             </GPanel>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-1 gap-6 grid-wrapper">
 
-            <GPanel class="flex flex-col w-full" span="1" :custom="true" title="Professional" subtitle="Experience"
-                :sparkle="true">
+            <GPanel class="flex flex-col w-full" span="1" title="Professional experience"
+                subtitle="Click to show description" :sparkle="true">
 
                 <ExperienceJobItem v-for="(item, index) in items" :class="{ 'active': (active_index === index) }"
                     :key="index" :company="item.company" :location="item.location" :duration_date="item.duration_date"
@@ -21,7 +20,20 @@
                     @click="showDescription(index)" />
             </GPanel>
 
-            <ModalsContainer />
+            <!-- <VueFinalModal class="flex justify-center items-center"
+                content-class="flex flex-col max-w-xl mx-4 p-4 bg--700 dark:bg-gray-900 border dark:border-gray-700 rounded-lg space-y-2"
+                v-if="openDescriptionModal" v-model="openDescriptionModal"> -->
+            <VueFinalModal class="text-pop-up-top flex justify-center items-center"
+                content-class=" text-pop-up-top flex flex-col max-w-xl mx-4 p-4 bg-white dark:bg-gray-900 border dark:border-gray-700 space-y-2 modal_wrapper"
+                v-if="openDescriptionModal && (!Number.isNaN(active_index))" v-model="openDescriptionModal">
+                <button class="modal__close" @click="toggleOpenDescModal()">
+                    <CgClose />
+                </button>
+                <span class="modal__title">Experience Description</span>
+                <p>
+                    {{ items[active_index].description }}
+                </p>
+            </VueFinalModal>
             <!-- <GPanel class="flex flex-col" span="1" subtitle="Job Description">
                 <div class="text-3xl text-neutral-500 mb-5">
                     Description
@@ -44,12 +56,16 @@
 
 <script setup lang="ts">
 import GPanel from '@/components/GPanel.vue';
-import { ModalsContainer, useModal } from 'vue-final-modal'
+import { CgClose } from "@kalimahapps/vue-icons";
+/* import { ModalsContainer, useModal } from 'vue-final-modal' */
 import ExperienceJobItem from "@/components/items/ExperienceJobItem.vue";
-import { ref, type Ref } from "vue";
-import CustomModal from '@/components/CustomModal.vue';
+import ExperienceEducItem from "@/components/items/ExperienceEducItem.vue";
+import { ref, watch, type Ref } from "vue";
+import { VueFinalModal } from 'vue-final-modal';
+//import CustomModal from '@/components/CustomModal.vue';
 
 const active_index = ref(NaN);
+const openDescriptionModal = ref(false)
 const items: Ref<{
     company: string;
     location: string;
@@ -77,7 +93,7 @@ const items: Ref<{
         duration_date: 'Jul. 2021 - Sep. 2021',
         role: 'Backend developer Trainee',
         project: 'Implements secured REST APIs with JWT and spring security.',
-        technologies: ['Java8', 'Spring boot', 'mongoDB', 'maven'],
+        technologies: ['Java8', 'Spring boot', 'Spring security', 'mongoDB', 'maven'],
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempora cum saepe ea labore adipisci nemo, error odio dolorum, ipsa dicta dolorem obcaecati magni nihil reiciendis velit nesciunt voluptatem? Provident!`
 
     },
@@ -102,7 +118,10 @@ const items: Ref<{
     },
 ])
 
-const { open, close } = useModal({
+watch(() => active_index, (newValue, oldValue) => {
+})
+
+/* const { open, close } = useModal({
     component: CustomModal,
     attrs: {
         content: items.value[active_index.value]?.description,
@@ -111,13 +130,19 @@ const { open, close } = useModal({
         },
     },
     slots: {
-        default: '<p>UseModal: The content of the modal</p>',
+        default: `<p>${items.value[active_index.value]?.description || 'TEST'}</p>`,
     },
-})
+}) */
 
 const showDescription = (index: number) => {
     active_index.value = index
-    open()
+    toggleOpenDescModal()
+}
+
+const toggleOpenDescModal = () => {
+    openDescriptionModal.value ?
+        openDescriptionModal.value = false :
+        openDescriptionModal.value = true
 } 
 </script>
 

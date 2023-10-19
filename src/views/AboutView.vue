@@ -58,10 +58,10 @@
 </template>
 
 <script setup lang="ts">
-import resume from "@/assets/Software_Engineer_resume_Ahmed_OUN.pdf";
+import resume from "@/assets/Ahmed_OUN_Resume.pdf";
 import GPanel from '@/components/GPanel.vue';
 import photo from '@/assets/images/ahmed.jpg'
-import ExperienceJobItem from "@/components/items/ExperienceJobItem.vue";
+
 const user = {
     name: 'Ahmed Oun',
     profilePhoto: photo,
