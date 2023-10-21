@@ -35,6 +35,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
+
 const props = defineProps(["company", "role", "location", "duration_date", "technologies", "project"]);
 </script>

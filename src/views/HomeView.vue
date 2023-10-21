@@ -24,7 +24,7 @@ const user = {
   introduction: `I am a highly skilled full stack developer with a strong background in both frontend and backend technologies. I\'m specialized in Angular ,Vue 3 , NodeJS. I have a bachelor’s degree in computer science at 2019, engineer’s degree in web mobile development at 2022 and I’m OCA Java SE 8 certified from Oracle.`,
   slogan: [
     'NodeJs',
-    'VueJs', 'Angular', 'Bootstrap5', 'Docker', 'Docker-compose',
+    'VueJs', 'Angular', 'Bootstrap5', 'Docker', 'Docker-compose', 'Nginx',
     'PostegreSQL', 'MongoDB', 'Websockets', 'Linux', 'Git', 'Vite',
     'HTML', 'CSS', 'SCSS', 'Javascript', 'Typescript', 'Java8', 'OOP', 'AWS'
   ]
@@ -182,9 +182,9 @@ const navigateTo = (link: string) => {
           <div v-for="(stat, i) in stats" :key="i"
             class="flex flex-col justify-center items-center bg-gray-800 rounded-3xl gap-5 px-4 py-9">
             <div class="text-4xl text-white">
-              <span v-if="stat.prefix!">
+              <!-- <span v-if="stat.prefix!">
                 {{ stat.prefix }}
-              </span>
+              </span> -->
               <number class="bold transition" ref="number2" :from="0" :to="stat.number" :duration="5"
                 easing="Power4.easeOut" />
             </div>

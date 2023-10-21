@@ -113,4 +113,17 @@ const downloadPdf = () => {
     margin-inline: auto;
     max-width: 250px;
 }
+
+.img-profile {
+    animation: rotate 1s linear 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 </style>
