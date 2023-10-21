@@ -20,9 +20,6 @@
                     @click="showDescription(index)" />
             </GPanel>
 
-            <!-- <VueFinalModal class="flex justify-center items-center"
-                content-class="flex flex-col max-w-xl mx-4 p-4 bg--700 dark:bg-gray-900 border dark:border-gray-700 rounded-lg space-y-2"
-                v-if="openDescriptionModal" v-model="openDescriptionModal"> -->
             <VueFinalModal class="text-pop-up-top flex justify-center items-center"
                 content-class=" text-pop-up-top flex flex-col max-w-xl mx-4 p-4 bg-white dark:bg-gray-900 border dark:border-gray-700 space-y-2 modal_wrapper"
                 v-if="openDescriptionModal && (!Number.isNaN(active_index))" v-model="openDescriptionModal">
@@ -34,22 +31,7 @@
                     {{ items[active_index].description }}
                 </p>
             </VueFinalModal>
-            <!-- <GPanel class="flex flex-col" span="1" subtitle="Job Description">
-                <div class="text-3xl text-neutral-500 mb-5">
-                    Description
-                </div>
-                <div class="text-neutral-300">
-                    <span v-if="!Number.isNaN(active_index)">
-                        {{ items[active_index].description }}
-                    </span>
-                    <span v-else>
-                        No description
-                    </span>
-                    <span>
-                        {{ active_index }}
-                    </span>
-                </div>
-            </GPanel> -->
+            
         </div>
     </main>
 </template>
@@ -57,12 +39,10 @@
 <script setup lang="ts">
 import GPanel from '@/components/GPanel.vue';
 import { CgClose } from "@kalimahapps/vue-icons";
-/* import { ModalsContainer, useModal } from 'vue-final-modal' */
 import ExperienceJobItem from "@/components/items/ExperienceJobItem.vue";
 import ExperienceEducItem from "@/components/items/ExperienceEducItem.vue";
-import { ref, watch, type Ref } from "vue";
+import { ref, type Ref } from "vue";
 import { VueFinalModal } from 'vue-final-modal';
-//import CustomModal from '@/components/CustomModal.vue';
 
 const active_index = ref(NaN);
 const openDescriptionModal = ref(false)
@@ -81,10 +61,11 @@ const items: Ref<{
         duration_date: 'Feb. 2022 - Jul. 2023',
         role: 'Fullstack Developer',
         project: 'Comprehensive social media analytics dashboard, streamlining influencer marketing workflow and Admin manager Dashboard .',
-        technologies: ['NodeJS', 'VueJS', 'Docker', 'Socket.io', 'mongoDB', 'postgreSQL'],
+        technologies: ['NodeJS', 'VueJS', 'Vuex', 'Docker', 'Socket.io', 'mongoDB', 'postgreSQL'],
         description: ` This mission started by developing a matchmaking application to create a digital ecosystem to ensure
         the communication between influencers and advertisers, that offers to user discover new social media influencers according to its 
-        needs, Consult their profile stat charts  
+        needs, Consult their profile stats with flexible charts, Create advertising campaigns, Realtime communication with influencers.
+        In addition we develop the ADMIN Manager dashboard that allow to admin manage all.
         `
     },
     {
@@ -94,7 +75,9 @@ const items: Ref<{
         role: 'Backend developer Trainee',
         project: 'Implements secured REST APIs with JWT and spring security.',
         technologies: ['Java8', 'Spring boot', 'Spring security', 'mongoDB', 'maven'],
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempora cum saepe ea labore adipisci nemo, error odio dolorum, ipsa dicta dolorem obcaecati magni nihil reiciendis velit nesciunt voluptatem? Provident!`
+        description: `This mission of 2 months, I developed a Spring boot server that allow to user to authenticate with multi role
+        and upload/download files and manage their posts using spring security. 
+        `
 
     },
     {
@@ -104,7 +87,7 @@ const items: Ref<{
         role: 'Mobile developer Trainee',
         project: 'Front-Flutter Development Treatment.',
         technologies: ['Flutter', 'Dart'],
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempora cum saepe ea labore adipisci nemo, error odio dolorum, ipsa dicta dolorem obcaecati magni nihil reiciendis velit nesciunt voluptatem? Provident!`
+        description: `It was a mission of 2 months, I started learning the basics of Dart language and Flutter.`
 
     },
     {
@@ -114,25 +97,9 @@ const items: Ref<{
         role: 'Developer Trainee',
         project: 'Web application that represents a social network telepresence system.',
         technologies: ['J2EE', 'Spring boot', 'Thymleaf', 'HTML', 'Javascript'],
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempora cum saepe ea labore adipisci nemo, error odio dolorum, ipsa dicta dolorem obcaecati magni nihil reiciendis velit nesciunt voluptatem? Provident!`
+        description: ``
     },
 ])
-
-watch(() => active_index, (newValue, oldValue) => {
-})
-
-/* const { open, close } = useModal({
-    component: CustomModal,
-    attrs: {
-        content: items.value[active_index.value]?.description,
-        onExit() {
-            close()
-        },
-    },
-    slots: {
-        default: `<p>${items.value[active_index.value]?.description || 'TEST'}</p>`,
-    },
-}) */
 
 const showDescription = (index: number) => {
     active_index.value = index

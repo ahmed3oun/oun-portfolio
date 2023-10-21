@@ -6,6 +6,7 @@ import viteConfig from './vite.config'
 export default mergeConfig(
   viteConfig,
   defineConfig({
+    base: 'oun-portfolio',
     test: {
       environment: 'jsdom',
       exclude: [...configDefaults.exclude, 'e2e/*'],

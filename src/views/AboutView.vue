@@ -67,11 +67,7 @@ const user = {
     profilePhoto: photo,
     occupation: 'Full-stack Developer',
     introduction: `I am a highly skilled full stack developer with a strong background in both frontend and backend technologies. I\'m specialized in Angular ,Vue 3 , NodeJS. I have a bachelor’s degree in computer science at 2019, engineer’s degree in web mobile development at 2022 and I’m OCA Java SE 8.`,
-    slogan:
-        '#Nodejs #VueJS #Bootstrap5 #Redis #Websockets #MySQL #PostgreSQL #AWS #Serverless #Linux #Git #Docker #Nginx #JavaScript #TypeScript #HTML #CSS'
 }
-
-// how to center a div with grid display ?
 
 const downloadPdf = () => {
     const blob = new Blob([resume], { type: 'application/pdf' })

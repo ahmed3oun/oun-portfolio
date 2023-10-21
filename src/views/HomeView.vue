@@ -13,6 +13,7 @@ import {
   UnGithubAlt,
   SiCredly,
   DeDockerPlain ,
+  DeTailwindcssPlain,
   DeMongodbOriginalWordmark 
 } from '@kalimahapps/vue-icons'
 import Star from '@/assets/images/star1.svg'
@@ -44,14 +45,10 @@ const news = [
 
 const stats = [
   {
-    number: 2,
-    title: 'Years Experience'
-    /* prefix: '+' */
+    number: 1,
+    title: 'Years Experience',
+    prefix: '+'
   },
-  /* {
-    number: 125,
-    title: 'Clients Countrywide'
-  }, */
   {
     number: 25,
     title: 'Total Projects'
@@ -119,7 +116,6 @@ const navigateTo = (link: string) => {
           </div>
         </div>
 
-        <!-- <div class="grid grid-cols-4 sm:grid-cols-2 gap-6 w-full h-full"> -->
         <div
           class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl flex flex-col justify-center px-4 py-3 border border-gray-800">
           <!-- Services -->
@@ -128,8 +124,7 @@ const navigateTo = (link: string) => {
               <!-- <LaLaravel class="text-5xl text-red-500" /> -->
               <VsFileTypeVue class="text-6xl text-[#41B883]" />
               <VsFileTypeAngular class="text-6xl text-cyan-400" />
-              <!-- <DeTailwindcssPlain class="text-5xl text-[#07adca]" /> -->
-              <!-- <SiAlpinedotjs class="text-6xl text-cyan-400" /> -->
+              <DeTailwindcssPlain class="text-5xl text-[#07adca]" />
               <VsFileTypeTypescriptOfficial class="text-6xl" />
               <VsFileTypeJsOfficial class="text-6xl text-cyan-400" />
               <VsFileTypeNode class="text-6xl text-cyan-400" />
@@ -137,31 +132,11 @@ const navigateTo = (link: string) => {
               <VsFileTypePgsql class="text-6xl text-cyan-400" />
               <DeMongodbOriginalWordmark  class="text-6xl text-cyan-400"/>
               <DeDockerPlain class="text-6xl text-cyan-400"/>
-              <!-- <SiLivewire class="text-5xl text-rose-400" /> -->
             </div>
           </GPanel>
-          <!-- About -->
-          <!-- <GPanel to="#" title="Credentials" subtitle="More About Me">
-            <div>
-              <img :src="Sign" alt="" />
-            </div>
-          </GPanel> -->
-
-          <!-- Projects -->
-          <!-- <GPanel to="#" title="Projects" subtitle="Showcase">
-            <div>
-              <img :src="MyWorks" alt="" />
-            </div>
-          </GPanel> -->
+          
         </div>
       </div>
-
-      <!-- Blog -->
-      <!-- <GPanel to="#" title="Blog" subtitle="Useful Articles">
-        <div>
-          <img :src="GFonts" alt="" />
-        </div>
-      </GPanel> -->
 
       <!-- Social -->
       <GPanel span="2" to="#" title="Profiles" subtitle="Stay with Me">
@@ -182,9 +157,9 @@ const navigateTo = (link: string) => {
           <div v-for="(stat, i) in stats" :key="i"
             class="flex flex-col justify-center items-center bg-gray-800 rounded-3xl gap-5 px-4 py-9">
             <div class="text-4xl text-white">
-              <!-- <span v-if="stat.prefix!">
+              <span v-if="stat.prefix!">
                 {{ stat.prefix }}
-              </span> -->
+              </span>
               <number class="bold transition" ref="number2" :from="0" :to="stat.number" :duration="5"
                 easing="Power4.easeOut" />
             </div>
@@ -202,7 +177,6 @@ const navigateTo = (link: string) => {
             Let's<br />
             work <span class="text-blue-600">together</span>.
           </div>
-          <!-- <div class="text-xs text-zinc-500 mt-2"> -->
             <div class="flex flex-wrap">
               <span v-for="(_slogan, index) in user.slogan" :key="index"
                 class="bg-gray-600 text-gray-100 text-xs font-medium mr-2 px-2.5 py-0.5 my-1 rounded-full dark:bg-gray-700 dark:text-gray-300">
@@ -211,27 +185,6 @@ const navigateTo = (link: string) => {
             </div>
         </div>
       </GPanel>
-
-      <!-- Notice -->
-      <!--  <GPanel to="#" span="4" custom>
-        <div class="text-sm">
-          <p>
-            I created this portfolio using <a href="#" class="text-[#41B883]">Vue3</a> and
-            <a href="#" class="text-[#07adca]">TailwindCSS</a> for my own needs.<br />
-            You are free to fork and use it as you may wish.<br />
-            Most features are yet to be implemented, so any contributions will be nice.
-          </p>
-          <div class="mt-6">
-            <a
-              target="_blank"
-              href="https://github.com/ahmed3oun"
-              class="border border-gray-600 bg-gray-700 text-white px-6 py-3 rounded-xl hover:bg-white hover:text-gray-700 transition-all shadow-sm shadow-black"
-            >
-              View in Github
-            </a>
-          </div>
-        </div>
-      </GPanel> -->
     </div>
   </main>
 </template>
@@ -268,16 +221,6 @@ const navigateTo = (link: string) => {
   animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-/* .tag-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(226, 226, 226);
-  color: black;
-  border-radius: 20%;
-  width: auto;
-  height: fit-content;
-} */
 @media (max-width: 935px) {
   .intro-wrapper {
     display: flex;
