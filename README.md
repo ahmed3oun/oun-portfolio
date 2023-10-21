@@ -7,9 +7,9 @@ This is a grid style dark themed portfolio especially designed with devs in mind
 > Inspired by [Gridx wordpress theme](https://wpriverthemes.com/gridx)
 
 <!-- <a href=#><img src="src/assets/images/screenshot.png"></a> -->
-<a href=#><img src="src/assets/screenshots/Home.png"></a>
-<a href=#><img src="src/assets/screenshots/About.png"></a>
-<a href=#><img src="src/assets/screenshots/workflow.png"></a>
+<a href=#><img src="src/assets/images/screenshots/Home.png"></a>
+<a href=#><img src="src/assets/images/screenshots/About.png"></a>
+<a href=#><img src="src/assets/images/screenshots/workflow.png"></a>
 
 ## Recommended IDE Setup
 
