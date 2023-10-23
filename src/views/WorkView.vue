@@ -58,7 +58,7 @@ const items: Ref<{
     {
         company: 'Tawa Digital Talents',
         location: 'Tunis, Lake 1',
-        duration_date: 'Feb. 2022 - Jul. 2023',
+        duration_date: 'Feb. 2022 - Sep. 2023',
         role: 'Fullstack Developer',
         project: 'Comprehensive social media analytics dashboard, streamlining influencer marketing workflow and Admin manager Dashboard .',
         technologies: ['NodeJS', 'VueJS', 'Vuex', 'Docker', 'Socket.io', 'mongoDB', 'postgreSQL'],
