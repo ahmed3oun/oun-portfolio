@@ -22,10 +22,10 @@ const user = {
   name: 'Ahmed Oun',
   profilePhoto: photo,
   occupation: 'Full-stack Developer',
-  introduction: `I am a highly skilled full stack developer with a strong background in both frontend and backend technologies. I\'m specialized in Angular ,Vue 3 , NodeJS. I have a bachelor’s degree in computer science at 2019, engineer’s degree in web mobile development at 2022 and I’m OCA Java SE 8 certified from Oracle.`,
+  introduction: `I am a highly skilled full stack developer with a strong background in both frontend and backend technologies. I\'m specialized in Angular, Vue 3, NodeJS & NestJS. I have a bachelor’s degree in computer science at 2019, engineer’s degree in web mobile development at 2022 and I’m OCA Java SE 8 certified from Oracle.`,
   slogan: [
-    'NodeJs',
-    'VueJs', 'Angular', 'Bootstrap5', 'Docker', 'Docker-compose', 'Nginx',
+    'NodeJs', 'NestJs',
+    'VueJs', 'Angular', 'Bootstrap5', 'Tailwind', 'Docker', 'Docker-compose', 'Nginx',
     'PostegreSQL', 'MongoDB', 'Websockets', 'Linux', 'Git', 'Vite',
     'HTML', 'CSS', 'SCSS', 'Javascript', 'Typescript', 'Java8', 'OOP', 'AWS'
   ]

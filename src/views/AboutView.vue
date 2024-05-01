@@ -27,7 +27,7 @@
                             good knowledge in backends best practices and skilled in frontend development
                             .<br />
                             I have been working with javascript for more than 4 years now and I love it!.<br />
-                            I have been working with NodeJS and VueJS for the last 2 years and nowadays I am comfortable
+                            I have been working with NodeJS, NestJS, Angular and VueJS for the last 2 years and nowadays I am comfortable
                             with the fullstack JS.<br />
                         </span>
                         <br />
@@ -74,7 +74,7 @@ const downloadPdf = () => {
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
-    link.download = 'Ahmed_oun_resume.pdf'
+    link.download = 'Ahmed_OUN_Resume.pdf'
     link.click()
     URL.revokeObjectURL(url)
 }
