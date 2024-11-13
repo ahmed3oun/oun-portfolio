@@ -12,20 +12,34 @@ import {
   AkLinkedInV2Fill,
   UnGithubAlt,
   SiCredly,
-  DeDockerPlain ,
+  DeDockerPlain,
   DeTailwindcssPlain,
-  DeMongodbOriginalWordmark 
+  DeMongodbOriginalWordmark
 } from '@kalimahapps/vue-icons'
 import Star from '@/assets/images/star1.svg'
+import {
+  React,
+  NextJs,
+  Kubernetes,
+  Linux,
+  Aws,
+  Git
+} from '@/components/icons';
 
 const user = {
   name: 'Ahmed Oun',
   profilePhoto: photo,
   occupation: 'Full-stack Developer',
-  introduction: `I am a highly skilled full stack developer with a strong background in both frontend and backend technologies. I\'m specialized in Angular, Vue 3, NodeJS & NestJS. I have a bachelor’s degree in computer science at 2019, engineer’s degree in web mobile development at 2022 and I’m OCA Java SE 8 certified from Oracle.`,
+  introduction1: `An experienced Full Stack JS/TS developer with over 2 years of experience in building scalable
+ web applications and microservices.`,
+  introduction2: `Proficient in frontend and backend technologies including
+ Angular ,VueJs ,React, NodeJS and NestJS.`,
+  introduction3: `Equipped with a solid academic foundation, holding a Bachelor’s degree in Computer Science
+ (2019) and an Engineering degree in Web & Mobile Development (2022)`,
+  introduction4: `Additionally, an ORACLE Certified Associate (OCA) in Java SE 8.`,
   slogan: [
     'NodeJs', 'NestJs',
-    'VueJs', 'Angular', 'Bootstrap5', 'Tailwind', 'Docker', 'Docker-compose', 'Nginx',
+    'VueJs', 'Angular', 'Bootstrap5', 'Tailwind', 'Docker', 'Docker-compose', 'Kubernetes', 'Gitlab CI/CD',
     'PostegreSQL', 'MongoDB', 'Websockets', 'Linux', 'Git', 'Vite',
     'HTML', 'CSS', 'SCSS', 'Javascript', 'Typescript', 'Java8', 'OOP', 'AWS'
   ]
@@ -94,7 +108,10 @@ const navigateTo = (link: string) => {
             {{ user.name }}
           </div>
           <div>
-            {{ user.introduction }}
+            <span>{{ user.introduction1 }}</span><br>
+            <span>{{ user.introduction2 }}</span><br>
+            <span>{{ user.introduction3 }}</span><br>
+            <span>{{ user.introduction4 }}</span><br>
           </div>
         </div>
       </GPanel>
@@ -120,21 +137,26 @@ const navigateTo = (link: string) => {
           class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl flex flex-col justify-center px-4 py-3 border border-gray-800">
           <!-- Services -->
           <GPanel to="#" span="2" title="Technology Stack" subtitle="Specialization">
-            <div class="h-12 flex justify-between items-center text-white">
-              <!-- <LaLaravel class="text-5xl text-red-500" /> -->
-              <VsFileTypeVue class="text-6xl text-[#41B883]" />
-              <VsFileTypeAngular class="text-6xl text-cyan-400" />
-              <DeTailwindcssPlain class="text-5xl text-[#07adca]" />
-              <VsFileTypeTypescriptOfficial class="text-6xl" />
-              <VsFileTypeJsOfficial class="text-6xl text-cyan-400" />
-              <VsFileTypeNode class="text-6xl text-cyan-400" />
-              <VsFileTypeNestjs class="text-6xl text-cyan-400" />
-              <VsFileTypePgsql class="text-6xl text-cyan-400" />
-              <DeMongodbOriginalWordmark  class="text-6xl text-cyan-400"/>
-              <DeDockerPlain class="text-6xl text-cyan-400"/>
+            <div class="h-12 flex h-fit flex-wrap gap-4 items-center text-white">
+              <VsFileTypeVue class="text-4xl text-[#41B883]" />
+              <VsFileTypeAngular class="text-4xl text-cyan-400" />
+              <React class="text-4xl text-cyan-400" />
+              <NextJs class="text-4xl text-cyan-400" />
+              <DeTailwindcssPlain class="text-4xl text-[#07adca]" />
+              <VsFileTypeTypescriptOfficial class="text-4xl" />
+              <VsFileTypeJsOfficial class="text-4xl text-cyan-400" />
+              <VsFileTypeNode class="text-4xl text-cyan-400" />
+              <VsFileTypeNestjs class="text-4xl text-cyan-400" />
+              <VsFileTypePgsql class="text-4xl text-cyan-400" />
+              <DeMongodbOriginalWordmark class="text-4xl text-cyan-400" />
+              <DeDockerPlain class="text-4xl text-cyan-400" />
+              <Aws class="text-4xl text-white-400" />
+              <Kubernetes class="text-4xl text-white-400" />
+              <Linux class="text-4xl text-cyan-400" />
+              <Git class="text-4xl text-cyan-400" />
             </div>
           </GPanel>
-          
+
         </div>
       </div>
 
@@ -174,15 +196,15 @@ const navigateTo = (link: string) => {
       <GPanel to="#" custom span="2" sparkle class="items-end">
         <div>
           <div class="text-5xl text-white mb-2">
-            Let's<br />
-            work <span class="text-blue-600">together</span>.
+            Let's
+            work <span class="text-[#ab999a]">together</span>.
           </div>
-            <div class="flex flex-wrap">
-              <span v-for="(_slogan, index) in user.slogan" :key="index"
-                class="bg-gray-600 text-gray-100 text-xs font-medium mr-2 px-2.5 py-0.5 my-1 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                {{ _slogan }}
-              </span>
-            </div>
+          <div class="flex flex-wrap">
+            <span v-for="(_slogan, index) in user.slogan" :key="index"
+              class="bg-gray-600 text-gray-100 text-xs font-medium mr-2 px-2.5 py-0.5 my-1 rounded-full dark:bg-gray-700 dark:text-gray-300">
+              {{ _slogan }}
+            </span>
+          </div>
         </div>
       </GPanel>
     </div>

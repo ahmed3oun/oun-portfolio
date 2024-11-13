@@ -14,43 +14,44 @@
             <!-- END Right Side -->
             <GPanel span="1" :custom="true" class="to-trans" subtitle="Who am i ?" :sparkle="true">
                 <div class="flex-col">
-                    <div class="text-3xl text-neutral-500 mb-5">
+                    <div class="text-3xl text-neutral-500 w-fit mb-5">
                         About me
                     </div>
-                    <div class="text-5xl text-white mb-2">
-                        Hello, I'm <span class="text-blue-600">Ahmed!</span>
+                    <div class="text-5xl mb-2 w-fit">
+                        <h1 class="type">Hello, I'm Ahmed</h1>
                     </div>
-                    <div class="text-neutral-300">
-                        <span>
-                            I am a fullstack Javascript/Typescript developer based in Tunisia,
-                            I love communication with others, writing clean code and pushing my skills to the limit with a
-                            good knowledge in backends best practices and skilled in frontend development
+                    <div class="text-neutral-300 mb-2">
+                        <p class="zoom-out">
+                            I am a <span class="text-[#ab999a]">fullstack Javascript/Typescript developer</span> based
+                            in Tunisia,
+                            I love communication with others, writing clean code and pushing my skills to the limit with
+                            <span class="text-[#ab999a]">a good knowledge in backends best practices</span>
+                            and <span class="text-[#ab999a]">skilled in frontend development</span>
                             .<br />
-                            I have been working with javascript for more than 4 years now and I love it!.<br />
-                            I have been working with NodeJS, NestJS, Angular and VueJS for the last 2 years and nowadays I am comfortable
-                            with the fullstack JS.<br />
-                        </span>
-                        <br />
-                        <span>
+                            I have been working with javascript for more than <span class="text-[#ab999a]">4
+                                years</span> now and I love it!.<br />
+                            I have been working with <span class="text-[#ab999a]">NodeJS, NestJS, Angular, VueJS and
+                                React</span>
+                            for the last <span class="text-[#ab999a]">2 years</span> and nowadays I am comfortable with
+                            the fullstack JS.<br />
+                            <br />
                             My interests include joining an exciting team of passionate people, personal
                             growth, make new contacts to improve my communication skills.<br />
-                        </span>
-                        <br />
-                        <span>
-                            About my strenghths, I'm collaborative and always,
-                            I share my knowledge with others, In addition I'm autonomous and creative.<br />
+                            <br />
+                            About my strenghths, I'm a <span class="text-[#ab999a]">good team player</span>, collaborative and always,
+                            I share my knowledge with others, In addition I'm <span class="text-[#ab999a]">autonomous</span> and <span class="text-[#ab999a]">creative</span>.<br />
                             About my weakness
-                            Maybe im perfectionist I take little more time to give a nice feature
+                            Maybe I'm <span class="text-[#ab999a]">perfectionist</span> I take little more time to give a nice feature
                             and I concentrate more with little details.<br />
-                        </span>
+                        </p>
                     </div>
-                    <button @click="downloadPdf()"
+                    <!-- <button @click="downloadPdf()"
                         class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 my-2 px-4 rounded inline-flex items-center">
                         <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
                         </svg>
                         <span>View resume</span>
-                    </button>
+                    </button> -->
                 </div>
             </GPanel>
         </div>
@@ -58,7 +59,7 @@
 </template>
 
 <script setup lang="ts">
-import resume from "@/assets/Ahmed_OUN_Resume.pdf";
+import pdfResume from "@/assets/Ahmed_OUN_Resume.pdf";
 import GPanel from '@/components/GPanel.vue';
 import photo from '@/assets/images/ahmed.jpg'
 
@@ -70,7 +71,7 @@ const user = {
 }
 
 const downloadPdf = () => {
-    const blob = new Blob([resume], { type: 'application/pdf' })
+    const blob = new Blob([pdfResume], { type: 'application/pdf' })
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
@@ -90,15 +91,6 @@ const downloadPdf = () => {
     place-items: center;
 }
 
-.img-wrapper {
-    border-radius: 29% 71% 67% 33% / 22% 30% 70% 78%;
-    max-height: 500px;
-    height: auto;
-    max-width: 500px;
-
-    overflow: hidden;
-}
-
 .intro-wrapper {
     display: flex;
     flex-direction: column;
@@ -106,20 +98,78 @@ const downloadPdf = () => {
 }
 
 .img-wrapper {
+    border-radius: 29% 71% 67% 33% / 22% 30% 70% 78%;
+    max-height: 500px;
+    height: auto;
+    max-width: 500px;
+    overflow: hidden;
     margin-inline: auto;
     max-width: 250px;
+    animation: zoom-in-zoom-out 1.5s linear 1;
 }
 
 .img-profile {
-    animation: rotate 1s linear 1;
+    width: auto;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.zoom-out {
+    animation: zoom-out 2s normal 1;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 150%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+@keyframes zoom-out {
+    0% {
+        scale: 130%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+
+
+/* Custom */
+
+h1 {
+    background: -webkit-linear-gradient(25deg, #eee, #1f1f1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: type 1.5s steps(90) 1.5s 1 normal both, cursor 1s step-end infinite;
+    position: relative;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
 }
 </style>
