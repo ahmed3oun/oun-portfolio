@@ -59,12 +59,12 @@ const news = [
 
 const stats = [
   {
-    number: 1,
+    number: 2,
     title: 'Years Experience',
     prefix: '+'
   },
   {
-    number: 25,
+    number: 29,
     title: 'Total Projects'
   }
 ]
@@ -182,7 +182,7 @@ const navigateTo = (link: string) => {
               <span v-if="stat.prefix!">
                 {{ stat.prefix }}
               </span>
-              <number class="bold transition" ref="number2" :from="0" :to="stat.number" :duration="5"
+              <number class="bold transition" ref="number2" :from="0" :to="stat.number" :duration="3"
                 easing="Power4.easeOut" />
             </div>
             <div class="uppercase text-sm text-center">
