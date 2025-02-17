@@ -14,7 +14,9 @@ import {
   SiCredly,
   DeDockerPlain,
   DeTailwindcssPlain,
-  DeMongodbOriginalWordmark
+  DeMongodbOriginalWordmark,
+  DeSpringOriginalWordmark,
+  DeJavaOriginalWordmark
 } from '@kalimahapps/vue-icons'
 import Star from '@/assets/images/star1.svg'
 import {
@@ -145,8 +147,10 @@ const navigateTo = (link: string) => {
               <DeTailwindcssPlain class="text-4xl text-[#07adca]" />
               <VsFileTypeTypescriptOfficial class="text-4xl" />
               <VsFileTypeJsOfficial class="text-4xl text-cyan-400" />
+              <DeJavaOriginalWordmark class="text-4xl text-cyan-400" />
               <VsFileTypeNode class="text-4xl text-cyan-400" />
               <VsFileTypeNestjs class="text-4xl text-cyan-400" />
+              <DeSpringOriginalWordmark class="text-4xl text-cyan-400" />
               <VsFileTypePgsql class="text-4xl text-cyan-400" />
               <DeMongodbOriginalWordmark class="text-4xl text-cyan-400" />
               <DeDockerPlain class="text-4xl text-cyan-400" />
