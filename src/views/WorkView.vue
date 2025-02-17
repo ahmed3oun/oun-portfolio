@@ -58,10 +58,10 @@ const items: Ref<{
     {
         company: 'Wolo',
         location: 'Tunis, North urban center',
-        duration_date: 'Jan. 2024 - present',
+        duration_date: 'Jan. 2024 - Dec. 2024',
         role: 'Fullstack Developer',
         project: 'Energy realtime monitoring dashboard, streamlining energy meters workflow and Admin manager Dashboard .',
-        technologies: ['NestJS', 'Angular', 'Signals', 'Docker', 'Docker-compose', 'WSL', 'mongoDB', 'postgreSQL'],
+        technologies: ['Spring Boot', 'Angular', 'Signals', 'Docker', 'Docker-compose', 'WSL', 'mongoDB', 'postgreSQL'],
         description: ` This mission started by developing an energy  realtime monitoring application, streamlining the renewable energy meters workflow.
         In addition it includes the ADMIN Manager dashboard that allow to manage all.
         `

@@ -30,15 +30,15 @@ const user = {
   name: 'Ahmed Oun',
   profilePhoto: photo,
   occupation: 'Full-stack Developer',
-  introduction1: `An experienced Full Stack JS/TS developer with over 2 years of experience in building scalable
+  introduction1: `An experienced Full Stack developer with over 2 years of experience in building scalable
  web applications and microservices.`,
   introduction2: `Proficient in frontend and backend technologies including
- Angular ,VueJs ,React, NodeJS and NestJS.`,
+ Angular ,VueJs ,React, NodeJS and Spring Boot.`,
   introduction3: `Equipped with a solid academic foundation, holding a Bachelor’s degree in Computer Science
  (2019) and an Engineering degree in Web & Mobile Development (2022)`,
   introduction4: `Additionally, an ORACLE Certified Associate (OCA) in Java SE 8.`,
   slogan: [
-    'NodeJs', 'NestJs',
+    'NodeJs', 'NestJs', 'Spring Boot',
     'VueJs', 'Angular', 'Bootstrap5', 'Tailwind', 'Docker', 'Docker-compose', 'Kubernetes', 'Gitlab CI/CD',
     'PostegreSQL', 'MongoDB', 'Websockets', 'Linux', 'Git', 'Vite',
     'HTML', 'CSS', 'SCSS', 'Javascript', 'Typescript', 'Java8', 'OOP', 'AWS'
@@ -53,8 +53,8 @@ const links = {
 
 const news = [
   '<span>Latest work and <strong>Featured</strong></span>',
-  '<a href=`#`>Latest work and <strong>Featured</strong></a>',
-  '<span>Latest work and <strong>Featured</strong></span>'
+  '<a href=`#`>Developing a <strong>Doctor Healthcare System</strong></a>',
+  '<span> streamlines workflows and processes to improve <strong>efficiency, accuracy, and patient care.</strong></span>'
 ]
 
 const stats = [
@@ -64,7 +64,7 @@ const stats = [
     prefix: '+'
   },
   {
-    number: 29,
+    number: 30,
     title: 'Total Projects'
   }
 ]
