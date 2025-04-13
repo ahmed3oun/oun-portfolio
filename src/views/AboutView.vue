@@ -34,9 +34,10 @@
                                 React</span>
                             for the last <span class="text-[#ab999a]">2 years</span> and nowadays I am comfortable with
                             the fullstack JS.<br />
+                            <br />
                             <span>On the other hand, I also have a <span class="text-[#ab999a]">DevOps background</span>.
                              I’m comfortable working in <span class="text-[#ab999a]">Linux</span> environments,
-                              particularly <span class="text-[#ab999a]">Ubuntu</span> through <span class="text-[#ab999a]">WSL</span></span><br/>.
+                              particularly <span class="text-[#ab999a]">Ubuntu</span> through <span class="text-[#ab999a]">WSL</span></span>.<br/>
                             <span>I have good knowledge of <span class="text-[#ab999a]">Docker</span> and experience in creating
                                application infrastructures using <span class="text-[#ab999a]">Docker Compose</span>.
                                I also have some hands-on experience with <span class="text-[#ab999a]">Kubernetes</span>
