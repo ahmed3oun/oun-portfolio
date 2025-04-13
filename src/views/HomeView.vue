@@ -117,6 +117,7 @@ const navigateTo = (link: string) => {
             <span>{{ user.introduction2 }}</span><br>
             <span>{{ user.introduction3 }}</span><br>
             <span>{{ user.introduction4 }}</span><br>
+            <span>{{ user.introduction5 }}</span><br>
           </div>
         </div>
       </GPanel>
