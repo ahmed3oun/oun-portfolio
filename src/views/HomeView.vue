@@ -35,7 +35,7 @@ const user = {
   introduction1: `An experienced Full Stack developer with over 2 years of experience in building scalable
  web applications and microservices.`,
   introduction2: `Proficient in frontend and backend technologies including
- Angular ,VueJs ,React, NodeJS and Spring Boot.`,
+ Angular ,VueJs ,React, NodeJS.`,
   introduction3: `Equipped with a solid academic foundation, holding a Bachelor’s degree in Computer Science
  (2019) and an Engineering degree in Web & Mobile Development (2022).`,
   introduction4: `Additionally, an ORACLE Certified Associate (OCA) in Java SE 8.`,
@@ -115,10 +115,10 @@ const navigateTo = (link: string) => {
           </div>
           <div>
             <span>{{ user.introduction1 }}</span><br>
-            <span class="mb-2">{{ user.introduction2 }}</span><br><br>
+            <span class="mb-1">{{ user.introduction2 }}</span><br><br>
             <span>{{ user.introduction3 }}</span><br>
-            <span>{{ user.introduction4 }}</span><br>
-            <span class="mb-2">{{ user.introduction5 }}</span><br><br>
+            <span class="mb-1">{{ user.introduction4 }}</span><br>
+            <span>{{ user.introduction5 }}</span><br><br>
             <span>{{ user.introduction6 }}</span><br>
             <span>{{ user.introduction7 }}</span><br>
           </div>
