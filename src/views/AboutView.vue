@@ -28,7 +28,7 @@
                             <span class="text-[#ab999a]">a good knowledge in backends best practices</span>
                             and <span class="text-[#ab999a]">skilled in frontend development</span>
                             .<br />
-                            I have been working with javascript for more than <span class="text-[#ab999a]">4
+                            I have been working with javascript for more than <span class="text-[#ab999a]">5
                                 years</span> now and I love it!.<br />
                             I have been working with <span class="text-[#ab999a]">NodeJS, NestJS, Angular, VueJS and
                                 React</span>
