@@ -34,14 +34,25 @@
                                 React</span>
                             for the last <span class="text-[#ab999a]">2 years</span> and nowadays I am comfortable with
                             the fullstack JS.<br />
+                            <span>On the other hand, I also have a <span class="text-[#ab999a]">DevOps background</span>.
+                             I’m comfortable working in <span class="text-[#ab999a]">Linux</span> environments,
+                              particularly <span class="text-[#ab999a]">Ubuntu</span> through <span class="text-[#ab999a]">WSL</span></span><br/>.
+                            <span>I have good knowledge of <span class="text-[#ab999a]">Docker</span> and experience in creating
+                               application infrastructures using <span class="text-[#ab999a]">Docker Compose</span>.
+                               I also have some hands-on experience with <span class="text-[#ab999a]">Kubernetes</span>
+                                and building <span class="text-[#ab999a]">CI/CD</span> pipelines using
+                                <span class="text-[#ab999a]">GitLab CI/CD</span> for deployment.</span><br/>
+                            <br/>
+                            <span>Additionally, I’m an <span class="text-[#ab999a]">AWS Practitioner</span> 
+                                with experience in services like <span class="text-[#ab999a]">EC2, S3 and EKS.</span> </span>
                             <br />
                             My interests include joining an exciting team of passionate people, personal
                             growth, make new contacts to improve my communication skills.<br />
                             <br />
                             About my strenghths, I'm a <span class="text-[#ab999a]">good team player</span>, collaborative and always,
                             I share my knowledge with others, In addition I'm <span class="text-[#ab999a]">autonomous</span> and <span class="text-[#ab999a]">creative</span>.<br />
-                            About my weakness
-                            Maybe I'm <span class="text-[#ab999a]">perfectionist</span> I take little more time to give a nice feature
+                            About my weakness,
+                            I'm <span class="text-[#ab999a]">perfectionist</span> I take little more time to give a nice feature
                             and I concentrate more with little details.<br />
                         </p>
                     </div>
