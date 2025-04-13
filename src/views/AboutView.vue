@@ -43,9 +43,9 @@
                                I also have some hands-on experience with <span class="text-[#ab999a]">Kubernetes</span>
                                 and building <span class="text-[#ab999a]">CI/CD</span> pipelines using
                                 <span class="text-[#ab999a]">GitLab CI/CD</span> for deployment.</span><br/>
-                            <br/>
+                            
                             <span>Additionally, I’m an <span class="text-[#ab999a]">AWS Practitioner</span> 
-                                with experience in services like <span class="text-[#ab999a]">EC2, S3 and EKS.</span> </span>
+                                with experience in services like <span class="text-[#ab999a]">EC2, S3 and EKS.</span> </span><br/>
                             <br />
                             My interests include joining an exciting team of passionate people, personal
                             growth, make new contacts to improve my communication skills.<br />
