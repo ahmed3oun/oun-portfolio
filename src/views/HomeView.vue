@@ -42,7 +42,7 @@ const user = {
   introduction5: `On the other hand, Have a DevOps background,
   with experience working in Linux environments like Ubuntu through WSL.`,
   introduction6: `Skilled in Docker, building infrastructures with Docker Compose, and have hands-on practice with Kubernetes.`,
-  introduction7: `I’ve created CI/CD pipelines using GitLab CI/CD and worked with AWS services like EC2, S3, and EKS.`,
+  introduction7: `Have created CI/CD pipelines using GitLab CI/CD and worked with AWS services like EC2, S3, and EKS.`,
   slogan: [
     'NodeJs', 'NestJs', 'Spring Boot',
     'VueJs', 'Angular', 'Bootstrap5', 'Tailwind', 'Docker', 'Docker-compose', 'Kubernetes', 'Gitlab CI/CD',
@@ -115,9 +115,9 @@ const navigateTo = (link: string) => {
           </div>
           <div>
             <span>{{ user.introduction1 }}</span><br>
-            <span class="mb-2">{{ user.introduction2 }}</span><br>
+            <span class="mb-2">{{ user.introduction2 }}</span><br><br>
             <span>{{ user.introduction3 }}</span><br>
-            <span class="mb-2">{{ user.introduction4 }}</span><br>
+            <span class="mb-2">{{ user.introduction4 }}</span><br><br>
             <span>{{ user.introduction5 }}</span><br>
             <span>{{ user.introduction6 }}</span><br>
             <span>{{ user.introduction7 }}</span><br>
