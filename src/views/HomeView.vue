@@ -123,6 +123,7 @@ const navigateTo = (link: string) => {
             <span>{{ user.introduction5 }}</span><br>
             <span>{{ user.introduction6 }}</span><br>
             <span>{{ user.introduction7 }}</span><br>
+            <span>{{ user.introduction8 }}</span><br>
           </div>
         </div>
       </GPanel>
