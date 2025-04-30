@@ -39,7 +39,7 @@ const user = {
   introduction3: `Equipped with a solid academic foundation, holding a Bachelor’s degree in Computer Science
  (2019) and an Engineering degree in Web & Mobile Development (2022).`,
   introduction4: `Additionally, an ORACLE Certified Associate (OCA) in Java SE 8 and OCI AI Foundations.`,
-  introduction5: `On the other hand, Have a DevOps &  background,
+  introduction5: `On the other hand, Have a DevOps & AI background,
   with experience working in Linux environments like Ubuntu through WSL.`,
   introduction6: `Skilled in Docker, building infrastructures with Docker Compose, and have hands-on practice with Kubernetes.`,
   introduction7: `Have created CI/CD pipelines using GitLab CI/CD and worked with AWS services like EC2, S3, and EKS.`,
