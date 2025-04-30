@@ -35,7 +35,7 @@
                             for the last <span class="text-[#ab999a]">2 years</span> and nowadays I am comfortable with
                             the fullstack JS.<br />
                             <br />
-                            <span>On the other hand, I also have a <span class="text-[#ab999a]">DevOps background</span>.
+                            <span>On the other hand, I also have a <span class="text-[#ab999a]">DevOps & AI background</span>.
                              I’m comfortable working in <span class="text-[#ab999a]">Linux</span> environments,
                               particularly <span class="text-[#ab999a]">Ubuntu</span> through <span class="text-[#ab999a]">WSL</span></span>.<br/>
                             <span>I have good knowledge of <span class="text-[#ab999a]">Docker</span> and experience in creating
@@ -46,6 +46,12 @@
                             
                             <span>Additionally, I’m an <span class="text-[#ab999a]">AWS Practitioner</span> 
                                 with experience in services like <span class="text-[#ab999a]">EC2, S3 and EKS.</span> </span><br/>
+                                <span>Also, I have a Foundation in <span class="text-[#ab999a]">AI</span> and <span class="text-[#ab999a]">machine learning</span>,
+                                with knowledge of <span class="text-[#ab999a]">generative AI</span> and <span class="text-[#ab999a]">large language model (LLMs)</span>
+                                I understand key <span class="text-[#ab999a]">ML and Deep learning architectures</span>, including 
+                                <span class="text-[#ab999a]">CNNs</span>,<span class="text-[#ab999a]">RNNs</span> and <span class="text-[#ab999a]">LSTMs</span>
+                                and can differentiate between <span class="text-[#ab999a]">supervised and unsupervised learning</span> techniques.
+                            </span><br />
                             <br />
                             My interests include joining an exciting team of passionate people, personal
                             growth, make new contacts to improve my communication skills.<br />

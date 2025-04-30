@@ -38,11 +38,13 @@ const user = {
  Angular ,VueJs ,React, NodeJS.`,
   introduction3: `Equipped with a solid academic foundation, holding a Bachelor’s degree in Computer Science
  (2019) and an Engineering degree in Web & Mobile Development (2022).`,
-  introduction4: `Additionally, an ORACLE Certified Associate (OCA) in Java SE 8.`,
-  introduction5: `On the other hand, Have a DevOps background,
+  introduction4: `Additionally, an ORACLE Certified Associate (OCA) in Java SE 8 and OCI AI Foundations.`,
+  introduction5: `On the other hand, Have a DevOps &  background,
   with experience working in Linux environments like Ubuntu through WSL.`,
   introduction6: `Skilled in Docker, building infrastructures with Docker Compose, and have hands-on practice with Kubernetes.`,
   introduction7: `Have created CI/CD pipelines using GitLab CI/CD and worked with AWS services like EC2, S3, and EKS.`,
+  introduction8: `distinguish between artificial intelligence, machine learning, and deep learning for real-world applications, gain the ability to efficiently choose the best OCI AI service for a
+  specific need and knowledge on the fundamentals of Generative AI and LLMs.`,
   slogan: [
     'NodeJs', 'NestJs', 'Spring Boot',
     'VueJs', 'Angular', 'Bootstrap5', 'Tailwind', 'Docker', 'Docker-compose', 'Kubernetes', 'Gitlab CI/CD',
